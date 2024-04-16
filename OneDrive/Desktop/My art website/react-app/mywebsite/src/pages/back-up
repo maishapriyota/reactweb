@@ -1,0 +1,122 @@
+import React from 'react';
+import seanPhoto from './maisha.jpeg'; // Import your photo
+import logoPhoto from './spotify.png';
+
+class About extends React.Component{
+  constructor(props) {
+    super(props);
+    this.state = {
+      isDarkMode: false // Initial state for dark mode
+    };
+  }
+
+  render() {
+    const { isDarkMode } = this.state;
+     return (
+      <div>
+        <div class={isDarkMode ? 'dark' : 'light'}>
+    <div class="about-container">
+      <div class="profile">
+        
+        <h1>About</h1>
+        <div class="profile-content">
+        <img src={seanPhoto} alt="Seán" class="portrait"   />
+        <div class="description">
+        <p class="about">I'm a Product Designer working remotely from 14°C Dublin, Ireland.</p>
+        <p class="about1">Over the past 12+ years, I've worked in various areas of digital design, including front-end development, email, marketing, and app UI/UX. I'm proud to have worn many hats.These days, I focus on leading design at GiveDirectly, a nonprofit that lets donors send money directly to the world's poorest households.</p>
+      </div>
+      </div>
+      </div>
+      </div>
+
+      <div class="capsule-container">
+  <div class="capsule">
+    <div class="content">
+      <h3>Company Name</h3>
+      <p>Position</p>
+      <p>Years Working</p>
+    </div>
+  </div>
+  <div class="capsule">
+    <div class="content">
+      <h3>Company Name</h3>
+      <p>Position</p>
+      <p>Years Working</p>
+    </div>
+  </div>
+  <div class="capsule">
+    <div class="content">
+      <h3>Company Name</h3>
+      <p>Position</p>
+      <p>Years Working</p>
+    </div>
+  </div>
+ 
+  
+</div>
+
+<div class="content-container">
+  <h1 class="heading">Let's collaborate if you're committed to sustainability, education, equality, or carbon neutrality.</h1>
+  <p class="paragraph">I believe we should leave this Earth as good as or better than we found it for future generations; my goal is to contribute to those ideals in whatever way I can. If you feel the same, I'd love to talk.</p>
+</div>
+
+<div class="box">
+  <div class="part part-1">
+    <h2>Make it</h2>
+    <p>I sketch wireframes and make prototypes. Talking through tactile designs existing in the browser is worth its weight. Design tools only carry you so far; the rest should be realized with a link my team can rally around.</p>
+  </div>
+  <div class="part part-2">
+    <h2>Collaborate</h2>
+    <p>Good design is not created in a vacuum but rather in a shared space. It must be facilitated and iterated upon as a team. I aim to include stakeholders in my design process and create a collaborative environment that welcomes and encourages feedback.</p>
+  </div>
+  <div class="part part-3">
+    <h2>Accessible FTW</h2>
+    <p>I aim to make everything I design accessible to all for one main reason - it's the right thing to do. Accessible products benefit the many, not the few.</p>
+  </div>
+  <div class="part part-4">
+    <h2>Keep experimenting</h2>
+    <p>Everything I create is subject to change and experimentation. Not everything will work, but it's worth trying - and learning from what doesn't.</p>
+  </div>
+</div>
+<div class="content-container">
+  <p class="paragraph">Before I stepped into the world of product design, I was a web developer. One of my earliest jobs involved writing HTML emails, in a time before email linters. Lots of wishing, hoping, and finger crossing that your email arrived in a recipient's inbox in one piece.<br />Coding emails forced me to understand how HTML and CSS play together, a skill set I've carried and kept fresh in the years since. My side project work is just an excuse to satisfy my curiosity about new technologies and understand how the web is moving forward.
+
+<br />Outside work, I enjoy good coffee near my home by the sea, listening to and playing music, exploring the world with my partner, and playing with my Labrottie pup, Louie.</p>
+</div>
+
+
+<footer>
+<div class="footer-container">
+    <div class="spotify-capsule">
+      <img src={logoPhoto} alt="Spotify Logo" />
+      <p class="spotify"><a href="https://open.spotify.com/track/4loXMor75kKVBB03ygwDlh?si=9d74e8b036464e96" target="_blank">Los Angeles</a></p>
+    </div>
+    <div class="elsewhere">
+      <h3>Elsewhere</h3>
+      <ul>
+        <li><a href="#">Figma</a></li>
+        <li><a href="#">Github</a></li>
+        <li><a href="#">Posts</a></li>
+        <li><a href="#">CV</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>© 2024 Seán Halpin</p>
+  </div>
+
+  
+</footer>
+</div>
+</div>
+      
+  );
+}
+}
+
+
+
+
+export default About;
+
