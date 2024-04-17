@@ -9,7 +9,7 @@ import Project from './pages/project';
 
 function App() {
   return (
-    <Router basename="/reactweb">
+    <Router basename="/reactapp">
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
