@@ -7,9 +7,9 @@ function Navigation() {
       <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
-        {/* Call handleContactClick when Contact link is clicked */}
-        <li><a href="/chatbot">Contact</a></li>
-        <li><Link to="/project">Projects</Link> {/* Updated navigation */}</li>
+        {/* Use Link component for Contact link */}
+        <li><Link to="/chatbot">Contact</Link></li>
+        <li><Link to="/project">Projects</Link></li>
       </ul>
     </nav>
   );
